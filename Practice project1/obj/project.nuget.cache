@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Wd/OKgW3f/0=",
+  "dgSpecHash": "Ic3xkLBd2bU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\CT_USER\\source\\repos\\Practice project1\\Practice project1\\Practice project1.csproj",
+  "projectFilePath": "C:\\Users\\CT_USER\\Source\\Repos\\Blog-Backend\\Practice project1\\Practice project1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CT_USER\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\CT_USER\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",

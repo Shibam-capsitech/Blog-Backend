@@ -71,7 +71,10 @@ namespace Practice_project1.Service
             await _user.ReplaceOneAsync(u => u.Id == updatedUser.Id, updatedUser);
         }
 
-
+        public async Task<UserModel> getUserDetails(string id)
+        {
+            return await _user.Find(u => u.Id == id).FirstOrDefaultAsync();
+        }
 
         // Aggregation practice 
         public async Task<int> CountUsersInNewYorkOver25Async()

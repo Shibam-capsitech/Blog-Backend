@@ -48,3 +48,54 @@ C:\Users\CT_USER\source\repos\Practice project1\Practice project1\bin\Debug\net8
 C:\Users\CT_USER\source\repos\Practice project1\Practice project1\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\CT_USER\source\repos\Practice project1\Practice project1\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\CT_USER\source\repos\Practice project1\Practice project1\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\appsettings.json
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Practice project1.staticwebassets.endpoints.json
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Practice project1.exe
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Practice project1.deps.json
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Practice project1.runtimeconfig.json
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Practice project1.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Practice project1.pdb
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\DnsClient.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\MongoDB.Bson.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\MongoDB.Driver.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\SharpCompress.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Snappier.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\Practice project1.csproj.AssemblyReference.cache
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\Practice project1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\Practice project1.AssemblyInfoInputs.cache
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\Practice project1.AssemblyInfo.cs
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\Practice project1.csproj.CoreCompileInputs.cache
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\Practice project1.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\Practice project1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\Practice project1.sourcelink.json
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\scopedcss\bundle\Practice project1.styles.css
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\Practice.D5FFD5CB.Up2Date
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\Practice project1.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\refint\Practice project1.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\Practice project1.pdb
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\Practice project1.genruntimeconfig.cache
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\ref\Practice project1.dll

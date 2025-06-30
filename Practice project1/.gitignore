@@ -1,0 +1,44 @@
+# Build results
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.app
+*.log
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code settings
+.vscode/
+
+# Visual Studio files
+.vs/
+*.vcxproj.user
+*.dbmdl
+*.pdb
+
+# ASP.NET / EF
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.json
+
+# Resharper
+*.DotSettings.user
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# Others
+TestResults/
+nunit-*.xml
+*.vsidx
+*.ilk
+*.ipch

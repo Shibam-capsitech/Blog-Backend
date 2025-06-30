@@ -270,6 +270,28 @@
         }
       }
     },
+    "/api/User/getUserDetails/{id}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/User/test-aggregation-count-newyork-over25": {
       "get": {
         "tags": [

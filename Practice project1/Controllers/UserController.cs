@@ -1,7 +1,8 @@
-﻿using Practice_project1.Dto;
+﻿using Microsoft.AspNetCore.Mvc;
+using Practice_project1.Dto;
 using Practice_project1.Models;
 using Practice_project1.Service;
-using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace Practice_project1.Controllers;
 
@@ -53,6 +54,23 @@ public class UserController : ControllerBase
 
         var token = _jwtService.GenerateToken(user);
         return Ok(new { Token = token });
+    }
+
+    [HttpGet("getUserDetails/{id}")]
+    public async Task<IActionResult> getUserDetails(string id)
+    {
+        var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+        if (userId == null)
+        {
+            return Unauthorized("Unauthorized");
+        }
+        var user = await _userService.getUserDetails(id);
+        if (user == null)
+        {
+            return NotFound("User Not Found");
+        }
+        return Ok(new { user });
     }
 
     [HttpGet("test-aggregation-count-newyork-over25")]
