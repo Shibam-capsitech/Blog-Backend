@@ -17,8 +17,9 @@ namespace Practice_project1.Models
 
         [BsonRepresentation(BsonType.ObjectId)]
         public string? userId { get; set; }
-        
 
+        [BsonElement("imgUrl")]
+        public string? imgUrl { get; set; } 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
     }

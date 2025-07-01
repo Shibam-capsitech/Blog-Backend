@@ -46,9 +46,19 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "Practice_project1.Dto.CreatePostDto",
-        "IsRequired": true
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

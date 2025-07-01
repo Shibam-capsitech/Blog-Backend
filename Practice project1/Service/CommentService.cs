@@ -21,6 +21,7 @@ namespace Practice_project1.Service
         public async Task CreateComment(CommentModel comment)
         {
             await _comment.InsertOneAsync(comment);
+           
         }
 
         public async Task DeleteComment(string id)

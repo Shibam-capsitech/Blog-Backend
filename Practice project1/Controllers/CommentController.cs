@@ -34,7 +34,7 @@ namespace Practice_project1.Controllers
             };
 
             await _commentservice.CreateComment(newComment);
-            return Ok("New comment posted!!");
+            return Ok(new{ newComment });
         }
 
         //[HttpGet("/get-all-post-comment/{postId}")]

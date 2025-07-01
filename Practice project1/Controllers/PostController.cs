@@ -13,26 +13,38 @@ namespace Practice_project1.Controllers
     {
         private readonly UserService _userService;
         private readonly PostService _postService;
+        private readonly CloudinaryService _cloudinaryService;
 
-        public PostController(UserService userService, PostService postService)
+        public PostController(UserService userService, PostService postService, CloudinaryService cloudinaryService)
         {
             _userService = userService;
             _postService = postService;
+            _cloudinaryService = cloudinaryService;
         }
 
         [HttpPost("create")]
-        public async Task<IActionResult> CreatePost(CreatePostDto dto)
+        public async Task<IActionResult> CreatePost([FromForm] CreatePostDto dto, IFormFile image)
         {
+            var imageResult = await _cloudinaryService.UploadImageAsync(image);
+
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
             if( userId == null)
             {
                 return Unauthorized("Unauthorized");
             }
-            var newPost = new Post {
+            if (imageResult.Error != null)
+            {
+                return BadRequest(imageResult.Error.Message);
+            }
+
+            var post = new Post
+            {
                 title = dto.title,
-                description = dto.description, 
-                userId = userId
+                description = dto.description,
+                userId = userId,
+                imgUrl = imageResult.SecureUrl.ToString(),
+
             };
 
             //var currUser = await _userService.getUserByUserIDAsync(userId);
@@ -42,7 +54,7 @@ namespace Practice_project1.Controllers
             //currUser.Posts.Add(newPost);
 
             //await _userService.updateUserAsync(currUser);
-            await _postService.CreateAsyncPost(newPost);
+            await _postService.CreateAsyncPost(post);
             return Ok("Post Created Success Fully");
 
         }

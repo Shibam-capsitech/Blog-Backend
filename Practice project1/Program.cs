@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Practice_project1;
 using Practice_project1.Models;
 using Practice_project1.Service;
 using System.Text;
@@ -68,6 +69,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
         };
     });
+builder.Services.Configure<CloudinarySettings>(
+    builder.Configuration.GetSection("CloudinarySettings"));
+builder.Services.AddSingleton<CloudinaryService>();
+
 builder.Services.AddSingleton<UserService>();
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<PostService>();

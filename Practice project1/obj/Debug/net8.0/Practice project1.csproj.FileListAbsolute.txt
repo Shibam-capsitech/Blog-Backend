@@ -99,3 +99,5 @@ C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\re
 C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\Practice project1.pdb
 C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\Practice project1.genruntimeconfig.cache
 C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\obj\Debug\net8.0\ref\Practice project1.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\CloudinaryDotNet.dll
+C:\Users\CT_USER\Source\Repos\Blog-Backend\Practice project1\bin\Debug\net8.0\Newtonsoft.Json.dll

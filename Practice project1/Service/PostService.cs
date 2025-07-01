@@ -47,6 +47,7 @@ namespace Practice_project1.Service
         {
             { "_id", 1 },
             { "title", 1 },
+            { "imgUrl", 1 },
             { "description", 1 },
             { "CreatedAt", 1 },
             { "user._id", 1 },
@@ -70,6 +71,7 @@ namespace Practice_project1.Service
                     _id = doc["_id"].AsObjectId.ToString(),
                     title = doc["title"].AsString,
                     description = doc["description"].AsString,
+                    imgUrl = doc["imgUrl"].AsString,
                     CreatedAt = doc["CreatedAt"].ToUniversalTime(),
                     user = new
                     {
@@ -139,6 +141,7 @@ namespace Practice_project1.Service
             { "_id", 1 },
             { "title", 1 },
             { "description", 1 },
+            { "imgUrl", 1 },
             { "CreatedAt", 1 },
             { "user._id", 1 },
             { "user.username", 1 },

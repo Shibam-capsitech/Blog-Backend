@@ -27,6 +27,9 @@ namespace Practice_project1.Dto
         [BsonElement("description")]
         public string Description { get; set; }
 
+        [BsonElement("imgUrl")]
+        public string? ImageUrl { get; set; }
+
         [BsonElement("CreatedAt")]
         public DateTime? CreatedAt { get; set; } 
 
