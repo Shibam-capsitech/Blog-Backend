@@ -138,5 +138,38 @@ namespace Practice_project1.Controllers
             //}
             return Ok(new { comments });
         }
+
+        [HttpGet("total-likes/{id}")]
+        public async Task<IActionResult> GetLikes(string id)
+        {
+            var post = await _postService.GetPostForLikes(id);
+            var totalLikes = post.likes;
+            if (totalLikes == null || totalLikes<0)
+            {
+                var likes = 0;
+                return BadRequest(new { likes });
+            }
+            return Ok(new { totalLikes });
+        }
+
+        [HttpPost("like/{id}")]
+        public async Task<IActionResult> PostLike(String id)
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (userId == null)
+            {
+                return Unauthorized("User Unauthorized");
+            }
+            var isPostLiked = await _postService.PostLike(id, userId);
+            if (isPostLiked)
+            {
+                return Ok("Post Liked");
+            }
+            else
+            {
+                return BadRequest("Post Liked Already");
+            }
+            
+        }
     }
 }

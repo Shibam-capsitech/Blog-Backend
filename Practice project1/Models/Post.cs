@@ -19,7 +19,14 @@ namespace Practice_project1.Models
         public string? userId { get; set; }
 
         [BsonElement("imgUrl")]
-        public string? imgUrl { get; set; } 
+        public string? imgUrl { get; set; }
+
+        [BsonElement("likes")]
+        public int? likes { get; set; }
+
+        [BsonElement("disLikes")]
+        public int? disLikes { get; set; }
+
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
     }

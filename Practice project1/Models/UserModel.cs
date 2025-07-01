@@ -29,5 +29,10 @@ namespace Practice_project1.Models
         [BsonElement("city")]
         public string? City { get; set; }
 
+        [BsonElement("likedPosts")]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public List<string> LikedPosts { get; set; }
+
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.OpenApi.Any;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.OpenApi.Any;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
@@ -12,6 +13,7 @@ namespace Practice_project1.Service
     {
         private readonly IMongoCollection<Post> _post;
         private readonly IMongoCollection<CommentModel> _comment;
+        private readonly IMongoCollection<UserModel> _user;
 
         public PostService(IConfiguration config)
         {
@@ -20,6 +22,7 @@ namespace Practice_project1.Service
             var database = client.GetDatabase(settings?.DatabaseName);
             _post = database.GetCollection<Post>(settings?.PostsCollectionName);
             _comment = database.GetCollection<CommentModel>(settings?.CommentsCollectionName);
+            _user = database.GetCollection<UserModel>(settings?.PersonCollectionName);
         }
 
         public async Task CreateAsyncPost (Post post)
@@ -296,6 +299,35 @@ namespace Practice_project1.Service
             return commentsList;
         }
 
+        public async Task<Post> GetPostForLikes(string postId)
+        {
+            return await _post.Find(post => post.Id == postId).FirstOrDefaultAsync();
+        }
+
+        public async Task<Boolean> PostLike(string postId, string userId)
+        {
+            var post = await _post.Find(post => post.Id == postId).FirstOrDefaultAsync();
+            var user = await _user.Find(user => user.Id == userId).FirstOrDefaultAsync();
+            if(user.LikedPosts != null)
+            {
+                foreach (string post_id in user.LikedPosts)
+                {
+                    if (post_id == postId)
+                    {
+                        return false;
+                    }
+                }
+            }
+            if (post.likes == null)
+            {
+                post.likes = 0;
+            }
+            post.likes = post.likes + 1;
+
+            await _post.ReplaceOneAsync(p => p.Id == postId, post);
+            await _user.ReplaceOneAsync()
+            return true;
+        }
 
     }
 }

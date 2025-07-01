@@ -123,6 +123,38 @@
   },
   {
     "ContainingType": "Practice_project1.Controllers.PostController",
+    "Method": "PostLike",
+    "RelativePath": "api/Post/like/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Practice_project1.Controllers.PostController",
+    "Method": "GetLikes",
+    "RelativePath": "api/Post/total-likes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Practice_project1.Controllers.PostController",
     "Method": "UpdatePost",
     "RelativePath": "api/Post/update/{id}",
     "HttpMethod": "PUT",
